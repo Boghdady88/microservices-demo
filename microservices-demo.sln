@@ -3,9 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DF7AD51B-BC2D-4D75-8579-980EE1236AE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{FC1EA890-C7B9-4EC7-9018-DFEFE85BB703}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{49352F14-ECDB-46A8-8789-16979AFD16F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{C5D67444-7162-44B2-AC79-B590A9BFEBAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductMicroservice", "src\Product\ProductMicroservice\ProductMicroservice.csproj", "{224406C3-1CFC-4789-83E2-25A24AB3FA19}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{224406C3-1CFC-4789-83E2-25A24AB3FA19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{224406C3-1CFC-4789-83E2-25A24AB3FA19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{224406C3-1CFC-4789-83E2-25A24AB3FA19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{224406C3-1CFC-4789-83E2-25A24AB3FA19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FC1EA890-C7B9-4EC7-9018-DFEFE85BB703} = {DF7AD51B-BC2D-4D75-8579-980EE1236AE3}
+		{49352F14-ECDB-46A8-8789-16979AFD16F3} = {FC1EA890-C7B9-4EC7-9018-DFEFE85BB703}
+		{C5D67444-7162-44B2-AC79-B590A9BFEBAF} = {FC1EA890-C7B9-4EC7-9018-DFEFE85BB703}
+		{224406C3-1CFC-4789-83E2-25A24AB3FA19} = {C5D67444-7162-44B2-AC79-B590A9BFEBAF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CB63E6C2-686A-4C37-8E58-98BB52D24CD8}
