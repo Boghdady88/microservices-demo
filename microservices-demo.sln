@@ -23,6 +23,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{6CD7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerMicroservice", "src\Services\Logging\LoggerMicroservice\LoggerMicroservice.csproj", "{58CFF25D-E725-420B-8F9D-B43E331C52B1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payment", "Payment", "{F1ABB6DB-C7DE-43D3-916E-5218D746A596}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentMicroservice", "src\Services\Payment\PaymentMicroservice\PaymentMicroservice.csproj", "{DE6B1979-055C-4086-B78A-9FE43666ADA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,10 @@ Global
 		{58CFF25D-E725-420B-8F9D-B43E331C52B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58CFF25D-E725-420B-8F9D-B43E331C52B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58CFF25D-E725-420B-8F9D-B43E331C52B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE6B1979-055C-4086-B78A-9FE43666ADA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE6B1979-055C-4086-B78A-9FE43666ADA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE6B1979-055C-4086-B78A-9FE43666ADA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE6B1979-055C-4086-B78A-9FE43666ADA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +67,8 @@ Global
 		{297D9C6E-E171-4A39-BCB3-E47070882557} = {DBE5AC11-97C4-4F43-B91C-37F235F47D52}
 		{6CD755FA-07F5-42C5-9CE3-7DD1C1ACC28F} = {FC1EA890-C7B9-4EC7-9018-DFEFE85BB703}
 		{58CFF25D-E725-420B-8F9D-B43E331C52B1} = {6CD755FA-07F5-42C5-9CE3-7DD1C1ACC28F}
+		{F1ABB6DB-C7DE-43D3-916E-5218D746A596} = {FC1EA890-C7B9-4EC7-9018-DFEFE85BB703}
+		{DE6B1979-055C-4086-B78A-9FE43666ADA2} = {F1ABB6DB-C7DE-43D3-916E-5218D746A596}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CB63E6C2-686A-4C37-8E58-98BB52D24CD8}
