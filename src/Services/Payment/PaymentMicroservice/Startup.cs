@@ -53,7 +53,7 @@ namespace PaymentMicroservice
 
             app.UseAuthorization();
 
-            app.UseMiddleware<ExceptionMiddleware>();
+            app.UseMiddleware<LoggerMiddleware>();
 
             app.UseEndpoints(endpoints =>
             {

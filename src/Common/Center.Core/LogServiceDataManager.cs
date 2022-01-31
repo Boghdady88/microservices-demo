@@ -32,10 +32,11 @@ namespace Center.Core
                 }
                 return false;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return false;
             }
         }
+
     }
 }

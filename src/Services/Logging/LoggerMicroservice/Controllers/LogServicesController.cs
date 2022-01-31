@@ -45,7 +45,7 @@ namespace LoggerMicroservice.Controllers
                     _logger.LogWarning($"{logDataAsString}");
                     break;
                 case LogTypes.Error:
-                    _logger.LogError($"{logDataAsString}");
+                    _logger.LogError($"{logDataAsString}", model.GetException());
                     break;
                 case LogTypes.Fatal:
                     _logger.LogTrace($"{logDataAsString}");
@@ -55,5 +55,25 @@ namespace LoggerMicroservice.Controllers
                     break;
             }
         }
+
+
+        //[HttpPost]
+        //public IActionResult Log(LogDataDto model, Exception exception)
+        //{
+        //    if (model == null && model is not LogDataDto)
+        //        return BadRequest();
+
+        //    CreateLogError(model, exception);
+        //    return Ok();
+        //}
+
+
+        //private void CreateLogError(LogDataDto model, Exception exception)
+        //{
+        //    var logDataAsString = System.Text.Json.JsonSerializer.Serialize(model);
+
+        //    _logger.LogError(logDataAsString, exception);
+
+        //}
     }
 }

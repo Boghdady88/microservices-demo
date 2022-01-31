@@ -8,12 +8,12 @@ using Center.Core.Models;
 
 namespace Center.Core.Middleware
 {
-    public class ExceptionMiddleware
+    public class LoggerMiddleware
     {
         private readonly RequestDelegate _next;
         private readonly IAppServiceName _appServiceName;
         private readonly LogServiceDataManager _logServiceDataManager;
-        public ExceptionMiddleware(RequestDelegate next, IAppServiceName appServiceName)
+        public LoggerMiddleware(RequestDelegate next, IAppServiceName appServiceName)
         {
             _next = next;
             _logServiceDataManager = new LogServiceDataManager();
@@ -40,8 +40,9 @@ namespace Center.Core.Middleware
                 catch (Exception ex)
                 {
                     // log error
-                    var logData = new LogDataDto { LogType = LogTypes.Error, LogData = ex.Message.ToString(), ServiceName = _appServiceName.ServiceName };
-                    await _logServiceDataManager.LogDataServiceAsync(LogDataModel.CreateLogData(logData));
+                    var logData = new LogDataDto { LogType = LogTypes.Error, LogData = ex.Message.ToString(), 
+                                                  ServiceName = _appServiceName.ServiceName };
+                    await _logServiceDataManager.LogDataServiceAsync(LogDataModel.CreateLogData(logData , ex));
                 }
             }
             else
