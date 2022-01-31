@@ -11,9 +11,9 @@ namespace Center.Core.Models
         public LogTypes LogType { get; set; } = LogTypes.Information;
         
 
-        public Exception GetException()
+        public object GetException()
         {
-            var result = JsonConvert.DeserializeObject<Exception>(ExceptionData); 
+            var result = JsonConvert.DeserializeObject(ExceptionData); 
             return result;
         }
     }
